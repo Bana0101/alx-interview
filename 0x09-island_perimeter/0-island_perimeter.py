@@ -16,8 +16,8 @@ def island_perimeter(grid):
         for c in range(cols):
             if grid[r][c] == 1:
                 island_unit += 1
-                if r > 0 and grid[r-1][c] == 1:
+                if (r > 0 and grid[r-1][c] == 1):
                     connect += 1
-                if c > 0 and grid[r][c-1] == 1:
+                if (c > 0 and grid[r][c-1] == 1):
                     connect += 1
     return island_unit * 4 - connect * 2
