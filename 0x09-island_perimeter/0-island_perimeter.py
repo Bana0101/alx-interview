@@ -6,6 +6,8 @@ def island_perimeter(grid):
     """ a function that calculate the island perimeter 
     Args:
          grid : A list of list of integers (0 or 1)
+    Return:
+         The perimeter of the island
     """
     rows = len(grid)
     cols = len(grid[0])
