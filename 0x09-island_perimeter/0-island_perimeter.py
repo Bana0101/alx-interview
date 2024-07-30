@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""island perimeter """
+"""The island perimeter """
 
 
 def island_perimeter(grid):
-    """ a function that calculate the island perimeter 
+    """A function that calculate the island perimeter 
     Args:
          grid (list): A list of list of integers (0 or 1)
     Returns:
