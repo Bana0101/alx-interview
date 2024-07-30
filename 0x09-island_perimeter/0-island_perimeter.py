@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""The size perimeter """
+"""island perimeter """
 
 
 def island_perimeter(grid):
@@ -10,17 +10,17 @@ def island_perimeter(grid):
     Returns:
         The perimeter of the island defined in grid.
     """
-    height = len(grid)
-    width = len(grid[0])
-    size = 0
-    edges = 0
+    rows = len(grid)
+    cols = len(grid[0])
+    island_unit = 0
+    connect = 0
 
-    for r in range(height):
-        for c in range(width):
+    for r in range(rows):
+        for c in range(cols):
             if grid[r][c] == 1:
-                size += 1
-                if (r > 0 and grid[r-1][c] == 1):
-                    edges += 1
-                if (c > 0 and grid[r][c-1] == 1):
-                    edges += 1
-    return size * 4 - edges * 2
+                island_unit += 1
+                if r < rows -1 and grid[r+1][c] == 1:
+                    connect += 1
+                if c < cols - 1 and grid[r][c+1] == 1:
+                    connect += 1
+    return island_unit * 4 - connect * 2
