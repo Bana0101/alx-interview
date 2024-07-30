@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-""" a function that calculate the island perimeter """
+"""island perimeter """
 
 
 def island_perimeter(grid):
+    """ a function that calculate the island perimeter 
+    Args:
+         grid : A list of list of integers (0 or 1)
+    """
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
