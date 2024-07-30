@@ -11,15 +11,15 @@ def island_perimeter(grid):
     """
     rows = len(grid)
     cols = len(grid[0])
-    island_unit = 0
+    island = 0
     connect = 0
 
     for r in range(rows):
         for c in range(cols):
             if grid[r][c] == 1:
-                island_unit += 1
+                island += 1
                 if (r > 0 and grid[r-1][c] == 1):
                     connect += 1
                 if (c > 0 and grid[r][c-1] == 1):
                     connect += 1
-    return island_unit * 4 - connect * 2
+    return island * 4 - connect * 2
