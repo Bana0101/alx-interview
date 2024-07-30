@@ -2,7 +2,7 @@
 """The size perimeter """
 
 
-def size_perimeter(grid):
+def island_perimeter(grid):
     """A function that calculate the size perimeter 
     Args:
          grid (list): A list of list of integers (0 or 1)
