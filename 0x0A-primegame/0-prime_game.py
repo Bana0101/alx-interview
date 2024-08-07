@@ -3,6 +3,7 @@
 
 
 def isWinner(x, nums):
+    """ Return the name of the player that win the most round"""
     mariaWinsCount = 0
     benWinsCount = 0
 
@@ -41,6 +42,7 @@ def isWinner(x, nums):
 
 
 def is_prime(n):
+    """Checks if the number is prime or not"""
     if n < 2:
         return False
     for i in range(2, int(n ** 0.5) + 1):
@@ -50,5 +52,6 @@ def is_prime(n):
 
 
 def primes_in_range(start, end):
+    """Return a list of prime numbers in a range"""
     primes = [n for n in range(start, end+1) if is_prime(n)]
     return primes
